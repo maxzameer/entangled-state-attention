@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use Entangled State Attention, please cite this preprint."
+title: "Entangled State Attention: Associative State Scanning for Causal Sequence Modeling"
+authors:
+  - family-names: "Hussain"
+    given-names: "Zameer"
+year: 2026
+doi: "10.5281/zenodo.20973958"
+url: "https://doi.org/10.5281/zenodo.20973958"

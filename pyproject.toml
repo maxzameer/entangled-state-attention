@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entangled-state-attention"
+version = "0.1.0"
+description = "PyTorch implementation of Entangled State Attention (ESA) for causal sequence modeling."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Zameer Hussain" }
+]
+keywords = [
+  "attention",
+  "transformer",
+  "sequence-modeling",
+  "pytorch",
+  "language-modeling",
+  "entangled-state-attention"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "torch>=2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "build>=1.0",
+  "twine>=5.0",
+  "ruff>=0.5"
+]
+[project.urls]
+Homepage = "https://github.com/maxzameer/entangled-state-attention"
+Repository = "https://github.com/maxzameer/entangled-state-attention"
+DOI = "https://doi.org/10.5281/zenodo.20973958"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
